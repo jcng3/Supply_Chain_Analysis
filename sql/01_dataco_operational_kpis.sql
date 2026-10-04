@@ -38,4 +38,13 @@ FROM public.dataco_supply_chain
 GROUP BY market, order_region
 HAVING COUNT(order_id) > 1000
 ORDER BY avg_delay_days DESC
-LIMIT 10
+LIMIT 10;
+
+--Identify Relationship Between Product Name And Avg Delay Days
+SELECT 
+	product_name,
+	ROUND(AVG(days_for_shipping_real - days_for_shipment_scheduled), 2) AS avg_delay_days
+FROM public.dataco_supply_chain
+GROUP BY product_name
+ORDER BY avg_delay_days DESC
+LIMIT 10;
