@@ -17,6 +17,7 @@ This project analyzes **180,000+ supply chain records** from DataCo to identify 
 ## 📁 Repository Structure
 ```text
 ├── sql/
-│   ├── 01_dataco_operational_kpis.sql     # Core OTIF, financial loss & high-level KPIs
-│   └── 02_root_cause_analysis.sql         # Diagnostic queries (Pareto 80/20, variance & SQL Views)
-└── README.md                              # Executive summary & project documentation
+│   ├── 01_dataco_operational_kpis.sql       # Baseline OTIF, profit impact, and delays
+│   ├── 02_dataco_root_cause_analysis.sql   # Diagnostic queries, Pareto analysis & rankings
+│   └── 03_dataco_views.sql                 # Production SQL views for BI integration
+└── README.md                                # Executive summary & case study
