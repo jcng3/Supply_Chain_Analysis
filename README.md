@@ -1,23 +1,42 @@
 # Supply_Chain_Analysis
 
 ## 📌 Executive Summary
-This project analyzes **180,000+ supply chain records** from DataCo to identify core operational bottlenecks, quantify financial losses driven by late deliveries, and calculate On-Time In-Full (OTIF) service levels across global logistics routes.
+An end-to-end data analytics and business intelligence project evaluating global supply chain performance, On-Time In-Full (OTIF) fulfillment rates, financial revenue exposure, and regional operational bottlenecks using PostgreSQL, Advanced SQL, and Tableau Public.
 
 ## 🛠️ Tech Stack & Tools
-* **Database:** PostgreSQL (Schema Design, Aggregations, Window Functions)
-* **Client Tool:** pgAdmin 4
-* **Visualization:** Tableau Public (In Progress)
-* **Methodology:** Lean Six Sigma / Operational Efficiency Focus
+* **Database & Querying:** PostgreSQL, pgAdmin 4
+* **Data Modeling:** SQL Views (vw_dataco_executive_kpis) for pre-computed metrics and performance optimization
+* **Visualization:** Tableau Public for visual analytics and dashboard interactivity
+* **Version Control:** GitHub (Structured repository tracking SQL scripts and documentation)
 
 ## 📊 Key Operational Metrics & Findings
 * **On-Time In-Full (OTIF) Rate:** Evaluated fulfillment delay percentages across Standard, First Class, and Same Day shipping modes.
 * **Financial Loss Impact:** Quantified profit margin variations between late and on-time order fulfillment.
 * **Geographic Bottlenecks:** Ranked regional shipping delays (Actual Days vs. Scheduled Lead Time).
+* **Carrier Bottlenecks:** Compared scheduled lead times against actual transit durations across Consumer, Corporate, and Home Office segments.
+
+## 📉 Interactive Tableau Dashboard
+Explore the fully interactive **Supply Chain Analysis Dashboard** hosted on Tableau Public:
+👉 [View Live Tableau Dashboard](https://public.tableau.com/views/SupplyChainAnaysis/1_1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Dashboard Preview & Key Findings
+* **Executive Scorecard:** Tracks 180K+ total order volumes, global OTIF fulfillment rates, and revenue exposure tied to late delivery risks.
+* **Pareto Bottleneck Analysis:** Highlights the top product categories (such as *Cleats* and *Men's Footwear*) driving the majority of operational delivery failures.
+* **Regional Heatmap:** Identifies structural delay variances and carrier SLA bottlenecks across international markets and shipping tiers.
 
 ## 📁 Repository Structure
 ```text
 ├── sql/
 │   ├── 01_dataco_operational_kpis.sql       # Baseline OTIF, profit impact, and delays
-│   ├── 02_dataco_root_cause_analysis.sql   # Diagnostic queries, Pareto analysis & rankings
-│   └── 03_dataco_views.sql                 # Production SQL views for BI integration
+│   ├── 02_dataco_root_cause_analysis.sql    # Diagnostic queries, Pareto analysis & rankings
+│   └── 03_dataco_views.sql                  # Production SQL views for BI integration
 └── README.md                                # Executive summary & case study
+```
+
+## 🤖 AI Collaboration & Acknowledgments
+This project was developed iteratively with the assistance of **Google Gemini** acting as a technical collaborator and sparring partner. AI-assisted workflows were utilized for:
+* **SQL Architecture:** Structuring and refining complex diagnostic queries, CTEs, and production database views.
+* **BI Strategy:** Designing the 4-part layout and calculating table expressions for the Tableau Public Control Tower.
+* **Documentation:** Drafting clear, professional case study documentation for GitHub.
+
+*All analytical decisions, query executions, design implementations, and validation were performed and verified by the author.*
