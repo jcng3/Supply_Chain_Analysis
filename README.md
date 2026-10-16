@@ -17,12 +17,18 @@ An end-to-end data analytics and business intelligence project evaluating global
 
 ## 📉 Interactive Tableau Dashboard
 Explore the fully interactive **Supply Chain Analysis Dashboard** hosted on Tableau Public:
-👉 [View Live Tableau Dashboard](https://public.tableau.com/views/SupplyChainAnaysis/1_1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+👉 [View Live Tableau Dashboard](https://public.tableau.com/views/SupplyChainAnaysis/1_1)
 
 ### Dashboard Preview & Key Findings
 * **Executive Scorecard:** Tracks 180K+ total order volumes, global OTIF fulfillment rates, and revenue exposure tied to late delivery risks.
 * **Pareto Bottleneck Analysis:** Highlights the top product categories (such as *Cleats* and *Men's Footwear*) driving the majority of operational delivery failures.
 * **Regional Heatmap:** Identifies structural delay variances and carrier SLA bottlenecks across international markets and shipping tiers.
+
+## 💡 Key Analytical Findings & Insights
+* The 80/20 analysis revealed that just a handful of product categories (such as Cleats, Men's Footwear and Women's Apparel) account for the majority of the late delivery, indicating the need for targeted inventory replenishment strategies in those specific categories.
+*  The lead time variance matrix and customer segment and carrier performance chart revealed that the second class shipping mode accounts for majority of late delivery, indicating the need for tiered visibility rather than treating all fulfillment modes equally.
+*  Over 20M of revenue is exposed at risk tied directly to late delivery, which demonstrates proactive real-time monitoring is highly recommended to protect profit margins.
+*  Abnormal data records are found. Same day shipping mode and standard class shipping mode column in the dataset might be swapped. As the overall value of same day delivery should be lower than standard class, while standard class value in the current dataset are lower than same day delivery mode. 
 
 ## 📁 Repository Structure
 ```text
